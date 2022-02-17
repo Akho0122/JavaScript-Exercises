@@ -15,11 +15,16 @@
 // };
 // printForecast(data2);
 
-const addUpp = function (numb) {
-  let sum = 0;
-  for (let i = 1; i <= numb; i++) {
-    sum += i;
-  }
-  return sum;
+// const addUpp = function (numb) {
+//   let sum = 0;
+//   for (let i = 1; i <= numb; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// };
+// console.log(addUpp(4));
+
+const minMax = function (arr) {
+  return [Math.min(...arr), Math.max(...arr)];
 };
-console.log(addUpp(4));
+console.log(minMax([1, 2, 3, 4, 5, 6]));
