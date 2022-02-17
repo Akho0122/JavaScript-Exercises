@@ -29,8 +29,14 @@
 // };
 // console.log(minMax([1, 2, 3, 4, 5, 6]));
 
-const strToCamelCase = function (...str) {
-  let camelCase = str[0].toLowerCase().trim() + str[1].toUpperCase();
-  console.log(camelCase);
+// const strToCamelCase = function (...str) {
+//   let camelCase = str[0].toLowerCase().trim() + str[1].toUpperCase();
+//   console.log(camelCase);
+// };
+// strToCamelCase(' AkhO ', 'Oribjonov');
+
+const reverseNumber = function (numb) {
+  numb = numb + '';
+  return numb.split('').reverse().join('');
 };
-strToCamelCase(' AkhO ', 'oribjonov');
+console.log(reverseNumber(12345));
