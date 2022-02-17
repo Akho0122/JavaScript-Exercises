@@ -24,7 +24,13 @@
 // };
 // console.log(addUpp(4));
 
-const minMax = function (arr) {
-  return [Math.min(...arr), Math.max(...arr)];
+// const minMax = function (arr) {
+//   return [Math.min(...arr), Math.max(...arr)];
+// };
+// console.log(minMax([1, 2, 3, 4, 5, 6]));
+
+const strToCamelCase = function (...str) {
+  let camelCase = str[0].toLowerCase().trim() + str[1].toUpperCase();
+  console.log(camelCase);
 };
-console.log(minMax([1, 2, 3, 4, 5, 6]));
+strToCamelCase(' AkhO ', 'oribjonov');
